@@ -8,7 +8,7 @@ const Home = ({ navigation }) => {
     <View style={styles.center}>
       <Text>This is the home screen</Text>
       <Button
-        title="Go to Home Screen"
+        title="Go to About Screen"
         onPress={() => navigation.navigate("About")} // We added an onPress event which would navigate to the About screen
       />
     </View>

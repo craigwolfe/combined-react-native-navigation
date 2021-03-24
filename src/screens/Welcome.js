@@ -1,15 +1,15 @@
-// ./screens/About.js
+// ./screens/Profile.js
 
 import React from "react";
 import { View, StyleSheet, Button, Text } from "react-native";
 
-const About = ({ navigation }) => {
+const Welcome = ({ navigation }) => {
   return (
     <View style={styles.center}>
-      <Text>This is the About screen</Text>
+      <Text>This is the Welcome screen</Text>
       <Button
-        title="Go to Welcome"
-        onPress={() => navigation.navigate("Welcome")} // We added an onPress event which would navigate to the About screen
+        title="Go to Home"
+        onPress={() => navigation.navigate("Home")} // We added an onPress event which would navigate to the About screen
       />
     </View>
   );
@@ -24,4 +24,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default About;
+export default Welcome;
