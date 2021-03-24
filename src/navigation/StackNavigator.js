@@ -5,8 +5,16 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 import Home from "../screens/Home";
 import About from "../screens/About";
-import Profile from "../screens/Profile";
 import Contact from "../screens/Contact";
+
+//screenOptionStyle
+const screenOptionStyle = {
+  headerStyle: {
+    backgroundColor: "#9AC4F8"
+  },
+  headerTintColor: "white",
+  headerBackTitle: "Back"
+};
 
 const Stack = createStackNavigator();
 
@@ -25,10 +33,18 @@ const MainStackNavigator = () => {
     >
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="About" component={About} />
-      <Stack.Screen name="Profile" component={Profile} />
       <Stack.Screen name="Contact" component={Contact} />
     </Stack.Navigator>
   );
 };
 
-export { MainStackNavigator };
+//contact stack navigator
+const ContactStackNavigator = () => {
+  return (
+    <Stack.Navigator screenOptions={screenOptionStyle}>
+      <Stack.Screen name="Contact" component={Contact} />
+    </Stack.Navigator>
+  );
+};
+
+export { MainStackNavigator, ContactStackNavigator };

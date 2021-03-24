@@ -6,9 +6,9 @@ import { View, StyleSheet, Button, Text } from "react-native";
 const Contact = ({ navigation }) => {
   return (
     <View style={styles.center}>
-      <Text>This is the home screen</Text>
+      <Text>This is the Contact screen</Text>
       <Button
-        title="Go to Home"
+        title="Go to Profile"
         onPress={() => navigation.navigate("Profile")} // We added an onPress event which would navigate to the About screen
       />
     </View>

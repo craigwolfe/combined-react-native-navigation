@@ -6,10 +6,10 @@ import { View, StyleSheet, Button, Text } from "react-native";
 const Profile = ({ navigation }) => {
   return (
     <View style={styles.center}>
-      <Text>This is the home screen</Text>
+      <Text>This is the Profile screen</Text>
       <Button
-        title="Go to Home"
-        onPress={() => navigation.navigate("Home")} // We added an onPress event which would navigate to the About screen
+        title="Go to Contact"
+        onPress={() => navigation.navigate("Contact")} // We added an onPress event which would navigate to the About screen
       />
     </View>
   );

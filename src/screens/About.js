@@ -6,7 +6,7 @@ import { View, StyleSheet, Button, Text } from "react-native";
 const About = ({ navigation }) => {
   return (
     <View style={styles.center}>
-      <Text>This is the home screen</Text>
+      <Text>This is the About screen</Text>
       <Button
         title="Go to Home"
         onPress={() => navigation.navigate("Home")} // We added an onPress event which would navigate to the About screen
