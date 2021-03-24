@@ -8,6 +8,7 @@ import About from "../screens/About";
 import Contact from "../screens/Contact";
 import Profile from "../screens/Profile";
 import Welcome from "../screens/Welcome";
+import Chat from "../screens/Chat";
 
 //screenOptionStyle
 const screenOptionStyle = {
@@ -38,6 +39,7 @@ const MainStackNavigator = () => {
       <Stack.Screen name="Contact" component={Contact} />
       <Stack.Screen name="Profile" component={Profile} />
       <Stack.Screen name="Welcome" component={Welcome} />
+      <Stack.Screen name="Chat" component={Chat} />
     </Stack.Navigator>
   );
 };
@@ -51,4 +53,12 @@ const ContactStackNavigator = () => {
   );
 };
 
-export { MainStackNavigator, ContactStackNavigator };
+const ChatStackNavigator = () => {
+  return (
+    <Stack.Navigator screenOptions={screenOptionStyle}>
+      <Stack.Screen name="Chat" component={Contact} />
+    </Stack.Navigator>
+  );
+};
+
+export { MainStackNavigator, ContactStackNavigator, ChatStackNavigator };
